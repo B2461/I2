@@ -2,19 +2,19 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 // Fix: UserInput, Reading, and SavedReading are now available in types.ts
-import { DivinationType, UserInput, Reading, SavedReading } from '../types';
+import { DivinationType, UserInput, Reading, SavedReading } from './types';
 import InputForm from './InputForm';
 import LoadingIndicator from './LoadingIndicator';
 import ResultDisplay from './ResultDisplay';
-import { generateReading } from '../services/geminiService';
-import { useAppContext } from '../App';
+import { generateReading } from './geminiService';
+import { useAppContext } from './App';
 import LiveAstrologerScreen from './LiveAstrologerScreen';
 import FutureStoryScreen from './FutureStoryScreen';
 import TimeManagementScreen from './TimeManagementScreen';
 import LocalExpertsScreen from './LocalExpertsScreen';
 import HtmlCodeGenerator from './HtmlCodeGenerator';
 import PrashnaChakraScreen from './PrashnaChakraScreen';
-import { addSavedReading } from '../services/firebaseService';
+import { addSavedReading } from './firebaseService';
 
 const DivinationScreen: React.FC = () => {
     const { toolType } = useParams<{ toolType: string }>();

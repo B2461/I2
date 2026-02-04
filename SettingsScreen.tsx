@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 import AudioPlayer from './AudioPlayer';
 
 interface SettingsScreenProps {

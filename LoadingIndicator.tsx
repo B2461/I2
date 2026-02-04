@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { DivinationType } from '../types';
+import { DivinationType } from './types';
 
 // Define different message sets
 const defaultMessages = [

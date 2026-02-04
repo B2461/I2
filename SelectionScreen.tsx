@@ -1,9 +1,9 @@
 
 import React, { useMemo, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { DivinationType, Product } from '../types';
+import { DivinationType, Product } from './types';
 import ToolShowcaseSlider from './ToolShowcaseSlider';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 import TrendingVideoCollection from './TrendingVideoCollection';
 import Card from './Card';
 

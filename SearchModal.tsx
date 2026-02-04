@@ -1,8 +1,8 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { Product } from '../types';
+import { Product } from './types';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface SearchModalProps {
     products: Product[];

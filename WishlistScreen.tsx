@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Product } from '../types';
+import { Product } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface WishlistScreenProps {
     products: Product[];

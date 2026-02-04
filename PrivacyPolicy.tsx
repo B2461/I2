@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 const PrivacyPolicy: React.FC = () => {
     const { t } = useAppContext();

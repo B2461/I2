@@ -1,10 +1,10 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 // Fix: Reading is now available in types.ts
-import { Reading, DivinationType } from '../types';
+import { Reading, DivinationType } from './types';
 import Card from './Card';
-import { generateSpeech } from '../services/geminiService';
-import { useAppContext } from '../App';
+import { generateSpeech } from './geminiService';
+import { useAppContext } from './App';
 
 // Audio decoding functions
 function decode(base64: string) {

@@ -2,10 +2,10 @@
 import React, { useState, FormEvent, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 // Fix: CustomerDetails is now available in types.ts
-import { CartItem, CustomerDetails, VerificationRequest, Order } from '../types';
+import { CartItem, CustomerDetails, VerificationRequest, Order } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
-import { addFirestoreOrder } from '../services/firebaseService';
+import { useAppContext } from './App';
+import { addFirestoreOrder } from './firebaseService';
 
 interface CheckoutScreenProps {
     cartItems: CartItem[];

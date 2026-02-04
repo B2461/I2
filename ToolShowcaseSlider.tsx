@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { DivinationType } from '../types';
-import { useAppContext } from '../App';
-import { showcaseTools } from '../data/tools';
+import { DivinationType } from './types';
+import { useAppContext } from './App';
+import { showcaseTools } from './tools';
 
 interface ToolShowcaseSliderProps {
     onSelect: (type: DivinationType) => void;

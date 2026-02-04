@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface WelcomeScreenProps {
     onStart: () => void;

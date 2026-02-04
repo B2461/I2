@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface VerificationPendingScreenProps {
     onAcknowledge: () => void;

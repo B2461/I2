@@ -1,18 +1,18 @@
 
 import React, { useState, useCallback, useEffect, useRef, createContext, useContext, useMemo } from 'react';
 import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
-import { DivinationType, CartItem, Order, CustomerDetails, Product, Notification, VerificationRequest, SupportTicket, SocialMediaPost, SubscriptionPlan, UserProfile, SavedReading, SocialLink } from '../types';
-import { products as initialProducts } from '../data/products';
-import { ebooks } from '../data/ebooks';
-import { toolCategories, showcaseTools } from '../data/tools';
-import { 
-    subscribeToAuthChanges, loginUser, registerUser, logoutUser, getFirestoreProducts, 
+import { DivinationType, CartItem, Order, CustomerDetails, Product, Notification, VerificationRequest, SupportTicket, SocialMediaPost, SubscriptionPlan, UserProfile, SavedReading, SocialLink } from './types';
+import { products as initialProducts } from './products';
+import { ebooks } from './ebooks';
+import { toolCategories, showcaseTools } from './tools';
+import {
+    subscribeToAuthChanges, loginUser, registerUser, logoutUser, getFirestoreProducts,
     saveUserProfile, updateFirestoreOrder, deleteFirestoreVerification,
     addVerificationRequest, addSupportTicket, addSocialPost, deleteSocialPost,
     updateSupportTicketStatus, getUserProfile, subscribeToUserReadings, deleteSavedReading,
     subscribeToUserOrders, getUserByEmail, subscribeToUserProfile, getUserByPhone,
     subscribeToProducts, incrementUserDownloads, subscribeToSocialLinks
-} from '../services/firebaseService';
+} from './firebaseService';
 
 // Components
 import WelcomeScreen from './WelcomeScreen';

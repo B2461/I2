@@ -1,5 +1,5 @@
 
-import { DivinationType } from '../types';
+import { DivinationType } from './types';
 
 export interface Tool {
     type: DivinationType;

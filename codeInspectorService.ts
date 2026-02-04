@@ -1,4 +1,4 @@
-import { DivinationType } from '../types';
+import { DivinationType } from './types';
 
 const objectCounterCode = {
     'types.ts': `

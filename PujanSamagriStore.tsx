@@ -1,9 +1,9 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { Product, ProductCategory } from '../types';
+import { Product, ProductCategory } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface PujanSamagriStoreProps {
     products: Product[];

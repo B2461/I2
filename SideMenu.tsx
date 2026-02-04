@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { DivinationType } from '../types';
-import { toolCategories } from '../data/tools';
-import { useAppContext } from '../App';
+import { DivinationType } from './types';
+import { toolCategories } from './tools';
+import { useAppContext } from './App';
 
 interface SideMenuProps {
     isOpen: boolean;

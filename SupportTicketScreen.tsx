@@ -2,8 +2,8 @@
 import React, { useState, FormEvent, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
-import { SupportTicket, VerificationRequest } from '../types';
-import { useAppContext } from '../App';
+import { SupportTicket, VerificationRequest } from './types';
+import { useAppContext } from './App';
 
 interface SupportTicketScreenProps {
     onCreateTicket: (ticket: Omit<SupportTicket, 'id' | 'status' | 'createdAt'>) => void;

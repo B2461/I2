@@ -1,8 +1,8 @@
 
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppContext } from '../App';
-import { changeUserPassword } from '../services/firebaseService';
+import { useAppContext } from './App';
+import { changeUserPassword } from './firebaseService';
 
 // Extract ProfileItem outside to prevent re-renders
 const ProfileItem = ({ icon, title, desc, onClick, isDanger = false, disabled = false, isFolder = false }: any) => (
