@@ -2,10 +2,10 @@
 import React, { useState, useEffect, useRef, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 // Fix: SavedReading is now available in types.ts
-import { SavedReading, DivinationType } from '../types';
+import { SavedReading, DivinationType } from './types';
 import Card from './Card';
-import { generateSpeech } from '../services/geminiService';
-import { useAppContext } from '../App';
+import { generateSpeech } from './geminiService';
+import { useAppContext } from './App';
 
 // Audio decoding functions
 function decode(base64: string) {

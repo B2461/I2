@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { Product, VerificationRequest, Order, SupportTicket, SocialMediaPost } from '../types';
+import { Product, VerificationRequest, Order, SupportTicket, SocialMediaPost } from './types';
 import AdminPanel from './AdminPanel';
 import Card from './Card';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface AdminScreenProps {
     products: Product[];

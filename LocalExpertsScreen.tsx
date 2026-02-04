@@ -1,9 +1,9 @@
 
 import React, { useState, FormEvent } from 'react';
 import Card from './Card';
-import { findLocalExperts } from '../services/geminiService';
+import { findLocalExperts } from './geminiService';
 // Fix: Place is now available in types.ts
-import { Place } from '../types';
+import { Place } from './types';
 
 interface LocalExpertsScreenProps {
     onBack: () => void;

@@ -2,10 +2,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 // Fix: ProductComment is now available in types.ts
-import { Product, ProductComment } from '../types';
+import { Product, ProductComment } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
-import { subscribeToProductComments } from '../services/firebaseService';
+import { useAppContext } from './App';
+import { subscribeToProductComments } from './firebaseService';
 
 const ProductDetailScreen: React.FC<{ products: Product[]; addToCart: (product: Product, quantity: number, color: string, size?: string) => void }> = ({ products, addToCart }) => {
     const { wishlist, toggleWishlist, isPremiumActive, currentUser, trackDownload } = useAppContext() as any;

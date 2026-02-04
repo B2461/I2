@@ -2,7 +2,7 @@
 import React from 'react';
 import Card from './Card';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface SubscriptionConfirmationScreenProps {
     expiryDate: string | null;

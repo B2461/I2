@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Notification } from '../types';
-import { useAppContext } from '../App';
+import { Notification } from './types';
+import { useAppContext } from './App';
 
 interface NotificationBellProps {
     notifications: Notification[];

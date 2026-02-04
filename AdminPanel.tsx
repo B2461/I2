@@ -1,9 +1,9 @@
 
 import React, { useState, FormEvent, useEffect, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Product, Order, UserProfile, SupportTicket, SocialMediaPost, VerificationRequest, SocialLink } from '../types';
+import { Product, Order, UserProfile, SupportTicket, SocialMediaPost, VerificationRequest, SocialLink } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 import { 
     addFirestoreProduct, 
     updateFirestoreProduct, 
@@ -16,10 +16,10 @@ import {
     addSocialLink,
     updateSocialLink,
     deleteSocialLink
-} from '../services/firebaseService';
-import { uploadToSupabase } from '../services/supabaseService';
-import { products as staticProducts } from '../data/products';
-import { ebooks as staticEbooks } from '../data/ebooks';
+} from './firebaseService';
+import { uploadToSupabase } from './supabaseService';
+import { products as staticProducts } from './products';
+import { ebooks as staticEbooks } from './ebooks';
 
 interface AdminPanelProps {
     products: Product[];

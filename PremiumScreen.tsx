@@ -1,8 +1,8 @@
 
 import React from 'react';
 import Card from './Card';
-import { SubscriptionPlan } from '../types';
-import { useAppContext } from '../App';
+import { SubscriptionPlan } from './types';
+import { useAppContext } from './App';
 
 interface PremiumScreenProps {
     onSelectPlan: (plan: SubscriptionPlan & { autoRenew: boolean }) => void;

@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import { getFirestore, collection, addDoc, getDocs, updateDoc, deleteDoc, doc, query, orderBy, initializeFirestore, setDoc, onSnapshot, limit, where, getDoc, serverTimestamp, increment } from 'firebase/firestore';
 import { firebaseConfig } from './firebaseConfig';
 // Fix: ProductComment, ChatMessage, and SavedReading are now available in types.ts
-import { Product, ProductComment, ChatMessage, UserProfile, Order, VerificationRequest, SupportTicket, SocialMediaPost, CartItem, Notification, SavedReading, SocialLink } from '../types';
+import { Product, ProductComment, ChatMessage, UserProfile, Order, VerificationRequest, SupportTicket, SocialMediaPost, CartItem, Notification, SavedReading, SocialLink } from './types';
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

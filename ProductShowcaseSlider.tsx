@@ -1,9 +1,9 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Product } from '../types';
+import { Product } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 // Reusable Product Card component for the showcase
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {

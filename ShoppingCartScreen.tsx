@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CartItem } from '../types';
+import { CartItem } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface ShoppingCartScreenProps {
     cartItems: CartItem[];

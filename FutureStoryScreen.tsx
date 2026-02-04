@@ -1,7 +1,7 @@
 
 import React from 'react';
 // Fix: UserInput is now available in types.ts
-import { UserInput } from '../types';
+import { UserInput } from './types';
 import Card from './Card';
 
 interface FutureStoryScreenProps {

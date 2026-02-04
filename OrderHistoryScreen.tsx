@@ -1,9 +1,9 @@
 
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Order } from '../types';
+import { Order } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface OrderHistoryScreenProps {
     orders: Order[];

@@ -1,9 +1,9 @@
 
 import React, { useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Product } from '../types';
+import { Product } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 interface TrendingVideoCollectionProps {
     products: Product[];

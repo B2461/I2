@@ -3,15 +3,15 @@ import React, { useState, useEffect, useRef, FormEvent, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
 // Fix: ChatMessage is now available in types.ts
-import { ChatMessage, UserProfile } from '../types';
-import { useAppContext } from '../App';
+import { ChatMessage, UserProfile } from './types';
+import { useAppContext } from './App';
 import { 
     subscribeToCommunityMessages, 
     sendCommunityMessage, 
     subscribeToAllUsers, 
     updateUserOnlineStatus,
     syncUserLocation
-} from '../services/firebaseService';
+} from './firebaseService';
 
 const CommunityChatScreen: React.FC = () => {
     const { currentUser, isAuthenticated, showAuth, isPremiumActive, incrementChatCount, updateProfile } = useAppContext() as any;

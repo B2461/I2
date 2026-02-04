@@ -1,10 +1,10 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Order, CartItem } from '../types';
+import { Order, CartItem } from './types';
 import Card from './Card';
-import { useAppContext } from '../App';
-import { updateFirestoreOrder } from '../services/firebaseService';
+import { useAppContext } from './App';
+import { updateFirestoreOrder } from './firebaseService';
 
 interface OrderConfirmationScreenProps {
     orders: Order[];

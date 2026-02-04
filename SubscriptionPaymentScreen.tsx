@@ -1,8 +1,8 @@
 
 import React, { useState, FormEvent, useRef } from 'react';
 import Card from './Card';
-import { SubscriptionPlan, VerificationRequest, UserProfile } from '../types';
-import { useAppContext } from '../App';
+import { SubscriptionPlan, VerificationRequest, UserProfile } from './types';
+import { useAppContext } from './App';
 
 const GPayIcon = () => (
     <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center p-1 shadow-md">

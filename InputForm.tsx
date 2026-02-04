@@ -1,10 +1,10 @@
 import React, { useState, FormEvent, useRef, useEffect } from 'react';
 // Fix: UserInput now available in types.ts
-import { DivinationType, UserInput, UserProfile } from '../types';
+import { DivinationType, UserInput, UserProfile } from './types';
 import Card from './Card';
 // Removed unused and missing generatePalmImage import
-import { toolCategories } from '../data/tools';
-import { useAppContext } from '../App';
+import { toolCategories } from './tools';
+import { useAppContext } from './App';
 
 const base64StringToFile = (base64String: string, filename: string): File => {
     const byteCharacters = atob(base64String);

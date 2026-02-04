@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
-import { useAppContext } from '../App';
+import { useAppContext } from './App';
 
 const AccountSettingsScreen: React.FC = () => {
     const { currentUser, updateProfile } = useAppContext() as any;

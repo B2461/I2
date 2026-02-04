@@ -1,5 +1,5 @@
 import { GoogleGenAI, Modality } from "@google/genai";
-import { DivinationType, UserInput, Reading, Place } from '../types';
+import { DivinationType, UserInput, Reading, Place } from './types';
 
 /**
  * Utility to convert a file to base64 for Gemini
